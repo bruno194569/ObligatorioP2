@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ObligatorioP2
+{
+    abstract class Lugar
+    {
+        #region atributos
+        private int id;
+        private string nombre;
+        private decimal dimensiones;
+        #endregion
+
+        public Lugar(int id, string nombre, decimal dimensiones)
+        {
+            this.Id = id;
+            this.Nombre = nombre;
+            this.Dimensiones = dimensiones;
+        }
+
+        public int Id { get => id; set => id = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
+        public decimal Dimensiones { get => dimensiones; set => dimensiones = value; }
+    }
+}
