@@ -12,6 +12,10 @@ namespace ObligatorioP2
         private decimal dimensiones;
         #endregion
 
+        public int Id { get => id; set => id = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
+        public decimal Dimensiones { get => dimensiones; set => dimensiones = value; }
+
         public Lugar(int id, string nombre, decimal dimensiones)
         {
             this.Id = id;
@@ -19,8 +23,15 @@ namespace ObligatorioP2
             this.Dimensiones = dimensiones;
         }
 
-        public int Id { get => id; set => id = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public decimal Dimensiones { get => dimensiones; set => dimensiones = value; }
+        public override string ToString()
+        {
+            
+            return $"ID : {id} \n" +
+                $"Nombre : {nombre}\n" +
+                $"Dimensiones : {dimensiones}\n";
+            //hay que definir algún método?
+        }
+
+
     }
 }
