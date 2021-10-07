@@ -29,7 +29,7 @@ namespace ObligatorioP2
             return $"ID : {id} \n" +
                 $"Nombre : {nombre}\n" +
                 $"Dimensiones : {dimensiones}\n";
-            //hay que definir algún método?
+            
         }
 
 

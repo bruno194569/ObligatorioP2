@@ -30,6 +30,7 @@ namespace ObligatorioP2
             porcentajeAforo = porcentaje;
             return true;
         }
-        //TODO + CambiarPorcentajeAforo() : bool
+        
+        
     }
 }

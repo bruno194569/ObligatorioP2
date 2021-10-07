@@ -8,7 +8,7 @@ namespace ObligatorioP2
 {
     class Abierto : Lugar
     {
-        private static decimal precioXButaca;
+        private static decimal precioXButaca = 40;
         public static decimal PrecioXButaca { get => precioXButaca; set => precioXButaca = value; }
 
         public Abierto(int id, string nombre, decimal dimensiones) : base (id, nombre, dimensiones)
