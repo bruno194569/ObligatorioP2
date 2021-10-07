@@ -92,7 +92,7 @@ namespace ObligatorioP2
             categorias.Add(unCategoria);
         }
 
-        private List<Actividad> ListarActividades()
+        public List<Actividad> ListarActividades()
         {
             List<Actividad> listaActividades = new List<Actividad>();
             foreach (Actividad unaActividad in actividades)

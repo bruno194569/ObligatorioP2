@@ -97,7 +97,7 @@ namespace ObligatorioP2
 
         private static void ListarTodasLasActividades()
         {
-            foreach (Actividad unaActividad in unS.Actividades)
+            foreach (Actividad unaActividad in unS.ListarActividades())
             {
                 Console.WriteLine(unaActividad);
                 Console.WriteLine("------------------------------------------------");
