@@ -22,5 +22,24 @@ namespace ObligatorioP2
         {
             return $"Nombre: {this.nombre}\nDescripcion: {this.descripcion}";
         }
+
+
+        public override bool Equals(object obj)
+        {
+            Categoria unaCategoria = obj as Categoria;
+            bool esValida = false;
+            if (this.nombre == unaCategoria.nombre)
+            {
+                esValida = true;
+            }
+            return esValida;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+
     }
 }

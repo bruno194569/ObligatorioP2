@@ -33,5 +33,24 @@ namespace ObligatorioP2
         }
 
 
+        public override bool Equals(object obj)
+        {
+            Lugar lugar = obj as Lugar;
+            bool esIgual = false;
+            if (this.GetHashCode() == lugar.GetHashCode())
+            {
+                esIgual = true;
+            }
+            return esIgual;
+        }
+
+        public override int GetHashCode() //identificador unico del objeto
+        {
+            return id;
+        }
+
+
+
+
     }
 }

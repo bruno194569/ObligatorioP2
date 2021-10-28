@@ -18,6 +18,7 @@ namespace ObligatorioP2
 
         public static decimal PrecioBase { get => precioBase; set => precioBase = value; }
         public string EdadMinima { get => edadMinima; set => edadMinima = value; }
+        public string Nombre { get => nombre;}
         internal Categoria Categoria { get => categoria; set => categoria = value; }
         public DateTime FechaYHora { get => fechaYHora; set => fechaYHora = value; }
 
